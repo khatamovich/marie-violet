@@ -8,13 +8,17 @@ export const $Menu = styled.nav`
 	align-items: center;
 	gap: 0.5em;
 
-	font-size: 4.5rem;
+	font-size: 3.75rem;
 	line-height: 1;
 
 	position: relative;
 	z-index: 999;
 
 	transform: translateY(-3vh);
+
+	@media (width >= 1280px) {
+		font-size: 4.5rem;
+	}
 `;
 
 export const MenuItem = styled(Link)`

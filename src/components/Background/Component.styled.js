@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
-export const $Layout = styled.div`
+export const $Background = styled.div`
 	background-color: ${({ $bgColor }) => $bgColor || "transparent"};
-	background: ${({ $bg }) => $bg};
+	background: ${({ $bg }) => `url(${$bg}) center / cover no-repeat`};
 	display: flex;
 	flex-direction: column;
 
