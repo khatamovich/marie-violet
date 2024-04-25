@@ -19,6 +19,14 @@ export const $Menu = styled.nav`
 	@media (width >= 1280px) {
 		font-size: 4.5rem;
 	}
+
+	@media (height <= 475px) {
+		font-size: 2.75rem;
+	}
+
+	@media (height <= 328px) {
+		font-size: 2rem;
+	}
 `;
 
 export const MenuItem = styled(Link)`
