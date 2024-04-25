@@ -1,8 +1,11 @@
-import { Content, LangsContainer, ContactsContainer } from "./Page.styled";
+import {
+	MainContainer,
+	LangsContainer,
+	ContactsContainer,
+} from "./Page.styled";
 
 // Simple components
 import Background from "../../components/Background/Background";
-import Container from "../../components/Container/Container";
 import Menu from "../../components/Menu/Menu";
 import Langs from "../../components/Langs/Langs";
 import Contacts from "../../components/Contacts/Contacts";
@@ -17,11 +20,9 @@ export default function Home() {
 				<Langs />
 			</LangsContainer>
 
-			<Container>
-				<Content>
-					<Menu />
-				</Content>
-			</Container>
+			<MainContainer>
+				<Menu />
+			</MainContainer>
 
 			<ContactsContainer>
 				<Contacts />

@@ -1,15 +1,16 @@
 import styled from "styled-components";
+import { $Container } from "../../components/Container/Component.styled";
 
-export const Content = styled.div`
-	height: inherit;
-
+export const MainContainer = styled($Container)`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 `;
 
-export const LangsContainer = styled.div`
+export const LangsContainer = styled($Container)`
+	height: auto;
+
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -17,6 +18,7 @@ export const LangsContainer = styled.div`
 	font-size: 1.25rem;
 	padding: 1.125em 1.5em;
 
+	max-width: unset;
 	width: 100%;
 `;
 
@@ -34,11 +36,7 @@ export const ContactsContainer = styled(LangsContainer)`
 	max-width: max-content;
 	padding: unset;
 
-	background: linear-gradient(
-		0deg,
-		rgba(98, 0, 112, 0.882) 41%,
-		rgba(171, 0, 173, 0.855) 100%
-	);
+	background: var(--gradient-bg-primary);
 	-webkit-box-shadow: rgba(255, 94, 255, 0.2) 36.740002px 41.990002px 500px
 		115.470001px;
 	box-shadow: rgba(255, 94, 255, 0.2) 36.740002px 41.990002px 500px

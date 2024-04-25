@@ -23,7 +23,7 @@ export const $Menu = styled.nav`
 
 export const MenuItem = styled(Link)`
 	color: inherit;
-	letter-spacing: 0.05em;
+	letter-spacing: 0.1em;
 
 	transition-property: transform;
 	transition-duration: 0.3s;

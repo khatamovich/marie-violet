@@ -1,14 +1,15 @@
 import styled from "styled-components";
 
 export const $Background = styled.div`
+	height: inherit;
 	background-color: ${({ $bgColor }) => $bgColor || "transparent"};
-	background: ${({ $bg }) => `url(${$bg}) center / cover no-repeat`};
+	background: ${({ $bg }) => $bg && `url(${$bg}) center / cover no-repeat`};
 	display: flex;
 	flex-direction: column;
 
 	@keyframes slideBackground {
 		0% {
-			background-position: 0% 50%;
+			background-position: 90% 50%;
 		}
 
 		100% {

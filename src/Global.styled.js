@@ -2,6 +2,10 @@ import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
   :root {
+
+      // Bgs
+      --gradient-bg-primary: linear-gradient(0deg, rgba(98, 0, 112, 0.882) 41%, rgba(171, 0, 173, 0.855) 100%);
+
       line-height: 1.5;
       font-family: "Inter", "Arial", sans-serif;
       font-weight: 400;
@@ -25,10 +29,6 @@ export const GlobalStyle = createGlobalStyle`
     background: black;
   }
 
-  #root > div {
-    height: inherit;
-  }
-
   a,
   a:visited,
   a:active
@@ -40,5 +40,10 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     color: white;
+  }
+
+  h1,h2,h3 {
+    font-family: "Lancelot", Inter, Arial, serif;
+    letter-spacing: 0.1em;
   }
 `;
