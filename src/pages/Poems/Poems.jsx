@@ -10,7 +10,6 @@ import {
 import { MdOutlineChevronRight, MdOutlineChevronLeft } from "react-icons/md";
 
 // Simple components
-import { Link } from "react-router-dom";
 import GoBack from "../../components/GoBack/GoBack";
 import Contacts from "../../components/Contacts/Contacts";
 import ReactPaginate from "react-paginate";
@@ -20,7 +19,7 @@ import { usePagination } from "../../hooks/usePagination";
 import poems from "../../static/poems";
 
 // Background image
-import bgPrimary from "../../assets/images/fire-poems.jpg";
+import bgPrimary from "../../assets/images/fire-verses.jpg";
 
 export default function Poetry({ title }) {
 	const { currentItems, pageCount, handlePageClick } = usePagination(

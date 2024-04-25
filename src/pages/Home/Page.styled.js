@@ -25,6 +25,7 @@ export const LangsContainer = styled($Container)`
 export const ContactsContainer = styled(LangsContainer)`
 	top: unset;
 	bottom: 0;
+	z-index: 888;
 	left: 50%;
 
 	font-size: 1.5rem;

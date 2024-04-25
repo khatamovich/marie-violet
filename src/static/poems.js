@@ -2,7 +2,7 @@ export default [
 	{
 		id: 1,
 		name: {
-			en: "Why hastily so the arrows run?",
+			en: "I was born in the deserted East, but with pale and flammable skin",
 		},
 		signature: {
 			en: "Author's signature",

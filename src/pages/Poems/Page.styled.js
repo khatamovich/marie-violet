@@ -9,7 +9,6 @@ export const Page = styled($Background)`
 	flex-direction: column;
 	height: auto;
 	min-height: 100%;
-
 	background-size: cover;
 	background-position: center;
 `;
@@ -30,6 +29,7 @@ export const MainContainer = styled($Container)`
 	display: flex;
 	flex-direction: column;
 	text-align: center;
+	align-items: center;
 
 	.pagination-container {
 		display: flex;
@@ -98,12 +98,22 @@ export const PoemsList = styled.div`
 	line-height: 1.25;
 	display: flex;
 	flex-direction: column;
-	gap: 0.5em;
+	gap: 0.75em;
 	flex: 1;
 `;
 
 export const PoemsItem = styled(Link)`
 	font-size: 1.75rem;
+	cursor: pointer;
+
+	transition-property: transform color;
+	transition-duration: 300ms;
+	transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+
+	&:hover,
+	&:active {
+		color: violet;
+	}
 `;
 
 export const HomeContactsContainer = ContactsContainer;

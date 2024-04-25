@@ -5,8 +5,8 @@ export const $Contacts = styled.div`
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap-reverse;
-
 	gap: 0.5em 1.25em;
+	z-index: 999;
 `;
 
 export const ContactsItem = styled.a`
