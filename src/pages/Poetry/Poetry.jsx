@@ -34,7 +34,7 @@ export default function Poetry({ title }) {
 			</HeaderContainer>
 
 			<MainContainer>
-				<Title>{title || "All poems"}</Title>
+				<Title>{title || "Poetry"}</Title>
 
 				{currentItems && currentItems.length >= 1 ? (
 					<PoemsList>

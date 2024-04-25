@@ -85,8 +85,8 @@ export const MainContainer = styled($Container)`
 export const Title = styled.h1`
 	font-size: 3rem;
 	line-height: 0.9;
-	letter-spacing: unset;
 	text-transform: capitalize;
+	width: 100%;
 
 	border-bottom: 1px solid #eee;
 	padding-bottom: 0.5em;
