@@ -46,4 +46,9 @@ export const GlobalStyle = createGlobalStyle`
     font-family: "Lancelot", Inter, Arial, serif;
     letter-spacing: 0.1em;
   }
+
+  blockquote,
+  p {
+    color: rgba(255, 255, 255, 0.85);
+  }
 `;

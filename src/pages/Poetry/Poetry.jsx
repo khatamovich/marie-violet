@@ -14,6 +14,7 @@ import GoBack from "../../components/GoBack/GoBack";
 import Contacts from "../../components/Contacts/Contacts";
 import ReactPaginate from "react-paginate";
 import { usePagination } from "../../hooks/usePagination";
+import { useNavigate } from "react-router-dom";
 
 // Data - poems
 import poems from "../../static/poems";
@@ -23,9 +24,16 @@ import bgPrimary from "../../assets/images/fire-verses.jpg";
 
 export default function Poetry({ title }) {
 	const { currentItems, pageCount, handlePageClick } = usePagination(
-		poems,
+		poems.en,
 		10,
 	);
+	const navigate = useNavigate();
+
+	const onNavigate = (path) => {
+		setTimeout(() => {
+			navigate("/poetry/" + path);
+		}, 300);
+	};
 
 	return (
 		<Page $bg={bgPrimary}>
@@ -39,7 +47,12 @@ export default function Poetry({ title }) {
 				{currentItems && currentItems.length >= 1 ? (
 					<PoemsList>
 						{currentItems.map((poem, i) => (
-							<PoemsItem key={`poem-${i}`}>{poem.name.en}</PoemsItem>
+							<PoemsItem
+								onClick={() => onNavigate(poem.id)}
+								key={`poem-${i}`}
+							>
+								{poem.name.en}
+							</PoemsItem>
 						))}
 					</PoemsList>
 				) : null}

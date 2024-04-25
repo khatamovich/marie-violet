@@ -11,11 +11,27 @@ export const Page = styled($Background)`
 	min-height: 100%;
 	background-size: cover;
 	background-position: center;
+
+	position: relative;
+
+	&::before {
+		content: "";
+		display: block;
+		width: 100%;
+		height: 100%;
+
+		position: fixed;
+		top: 0;
+		left: 0;
+
+		background: ${(props) => `url(${props.$bg})`} center / cover no-repeat;
+	}
 `;
 
 export const HeaderContainer = styled($Container)`
 	height: auto;
 	padding: 2em 0 1em;
+	z-index: 2;
 
 	display: flex;
 	justify-content: flex-end;
@@ -25,6 +41,7 @@ export const MainContainer = styled($Container)`
 	height: unset;
 	flex: 1;
 	padding-bottom: 6.5em;
+	z-index: 2;
 
 	display: flex;
 	flex-direction: column;
@@ -94,7 +111,7 @@ export const Title = styled.h1`
 `;
 
 export const PoemsList = styled.div`
-	font-size: 1.5rem;
+	font-size: 1.75rem;
 	line-height: 1.25;
 	display: flex;
 	flex-direction: column;
@@ -103,7 +120,6 @@ export const PoemsList = styled.div`
 `;
 
 export const PoemsItem = styled(Link)`
-	font-size: 1.75rem;
 	cursor: pointer;
 
 	transition-property: transform color;
