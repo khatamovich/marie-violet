@@ -25,6 +25,9 @@ export const Page = styled($Background)`
 		left: 0;
 
 		background: ${(props) => `url(${props.$bg})`} center / cover no-repeat;
+
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
 	}
 `;
 
