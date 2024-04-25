@@ -7,7 +7,8 @@ import { ContactsContainer } from "../Home/Page.styled";
 export const Page = styled($Background)`
 	display: flex;
 	flex-direction: column;
-	height: inherit;
+	height: auto;
+	min-height: 100%;
 
 	background-size: cover;
 	background-position: center;
@@ -24,7 +25,7 @@ export const HeaderContainer = styled($Container)`
 export const MainContainer = styled($Container)`
 	height: unset;
 	flex: 1;
-	margin-bottom: 6.5em;
+	padding-bottom: 6.5em;
 
 	display: flex;
 	flex-direction: column;
@@ -35,8 +36,8 @@ export const MainContainer = styled($Container)`
 		align-items: center;
 		justify-content: center;
 		gap: 1em;
+		margin-top: 2em;
 
-		margin-top: auto;
 		list-style: none;
 		-webkit-user-select: none;
 		user-select: none;
@@ -98,6 +99,7 @@ export const PoemsList = styled.div`
 	display: flex;
 	flex-direction: column;
 	gap: 0.5em;
+	flex: 1;
 `;
 
 export const PoemsItem = styled(Link)`
