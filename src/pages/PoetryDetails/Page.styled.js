@@ -28,10 +28,13 @@ export const MainContainer = styled($Container)`
 `;
 
 export const PoetryPageTitle = styled(Title)`
-	font-size: 1.75rem;
+	font-size: 2rem;
 	line-height: 1.125;
 	text-transform: unset;
 	white-space: pre-line;
+	max-width: 45ch;
+	width: 90%;
+	margin: 0 auto;
 `;
 
 export const HomeContactsContainer = ContactsContainer;
