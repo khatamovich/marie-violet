@@ -46,19 +46,21 @@ export default function Poetry({ title }) {
 				) : null}
 
 				{/*Pagination start*/}
-				<ReactPaginate
-					previousClassName="previous"
-					nextClassName="next"
-					className="pagination-container"
-					pageClassName="pagination-item"
-					breakLabel="..."
-					nextLabel={<MdOutlineChevronRight size="32" />}
-					onPageChange={handlePageClick}
-					pageRangeDisplayed={0}
-					pageCount={pageCount}
-					previousLabel={<MdOutlineChevronLeft size="32" />}
-					renderOnZeroPageCount={null}
-				/>
+				{pageCount > 1 && (
+					<ReactPaginate
+						previousClassName="previous"
+						nextClassName="next"
+						className="pagination-container"
+						pageClassName="pagination-item"
+						breakLabel="..."
+						nextLabel={<MdOutlineChevronRight size="32" />}
+						onPageChange={handlePageClick}
+						pageRangeDisplayed={0}
+						pageCount={pageCount}
+						previousLabel={<MdOutlineChevronLeft size="32" />}
+						renderOnZeroPageCount={null}
+					/>
+				)}
 				{/*Pagination End*/}
 			</MainContainer>
 
