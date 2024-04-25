@@ -9,6 +9,10 @@ export const usePagination = (items = [], itemsPerPage = 2) => {
 	const handlePageClick = (event) => {
 		const newOffset = (event.selected * itemsPerPage) % items.length;
 		setItemOffset(newOffset);
+
+		window.scrollTo({
+			top: 0,
+		});
 	};
 
 	return { currentItems, handlePageClick, pageCount };

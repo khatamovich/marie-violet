@@ -32,6 +32,9 @@ export default function Poetry({ title }) {
 	const onNavigate = (path) => {
 		setTimeout(() => {
 			navigate("/poetry/" + path);
+			window.scrollTo({
+				top: 0,
+			});
 		}, 300);
 	};
 
