@@ -49,6 +49,6 @@ export const GlobalStyle = createGlobalStyle`
 
   blockquote,
   p {
-    color: #fafafa;
+    color: rgba(255,255,255, 0.85);
   }
 `;
