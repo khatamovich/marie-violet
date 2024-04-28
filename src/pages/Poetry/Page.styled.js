@@ -114,16 +114,18 @@ export const Title = styled.h1`
 `;
 
 export const PoemsList = styled.div`
-	font-size: 1.75rem;
+	font-size: 1.125rem;
 	line-height: 1.25;
 	display: flex;
 	flex-direction: column;
-	gap: 0.75em;
+	gap: 1em;
 	flex: 1;
 `;
 
-export const PoemsItem = styled(Link)`
+export const PoemsItem = styled.span`
 	cursor: pointer;
+	border-bottom: 1px solid #eee;
+	padding-bottom: 0.5em;
 
 	transition-property: transform color;
 	transition-duration: 300ms;

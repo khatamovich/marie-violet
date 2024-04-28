@@ -8,7 +8,7 @@ export const $Menu = styled.nav`
 	align-items: center;
 	gap: 0.75em;
 
-	font-size: 3.75rem;
+	font-size: 3.25rem;
 	line-height: 1;
 
 	position: relative;
