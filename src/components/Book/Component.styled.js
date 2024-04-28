@@ -6,6 +6,7 @@ export const $Book = styled.div`
 `;
 
 export const ImageContainer = styled.div`
+	margin-bottom: 0.75em;
 	img {
 		display: block;
 		max-width: 100%;
@@ -20,13 +21,17 @@ export const ActionsContainer = styled.div`
 	gap: 2.75em;
 
 	button {
-		font-size: 1.25rem;
+		font-size: 1.5rem;
 		font-family: Lancelot, Inter, Arial, serif;
 		border: none;
 		background: transparent;
 
 		color: inherit;
 		cursor: pointer;
+
+		display: flex;
+		align-items: center;
+		gap: 0.3em;
 
 		&:hover {
 			text-decoration: underline;
