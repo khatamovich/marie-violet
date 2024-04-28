@@ -34,7 +34,7 @@ export const GlobalStyle = createGlobalStyle`
   a:active
   a:hover {
     color: inherit;
-    font-family: "Lancelot", Inter, Arial, serif;
+    font-family: "EB Garamond", Inter, Arial, serif;
     text-decoration: none;
   }  
 
@@ -43,12 +43,12 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   h1,h2,h3 {
-    font-family: "Lancelot", Inter, Arial, serif;
+    font-family: "EB Garamond", Inter, Arial, serif;
     letter-spacing: 0.1em;
   }
 
   blockquote,
   p {
-    color: rgba(255, 255, 255, 0.85);
+    color: #fafafa;
   }
 `;

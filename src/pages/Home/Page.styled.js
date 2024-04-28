@@ -20,6 +20,10 @@ export const LangsContainer = styled($Container)`
 
 	max-width: unset;
 	width: 100%;
+
+	@media (width >= 1000px) {
+		font-size: 2.75rem;
+	}
 `;
 
 export const ContactsContainer = styled(LangsContainer)`

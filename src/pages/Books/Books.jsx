@@ -35,7 +35,7 @@ export default function Books({ title }) {
 						<Book
 							key={book.id}
 							title={book.name.en}
-							description={book.annotation.en.substring(0, 400)}
+							description={book.annotation.en}
 							coverImage={book.coverImage}
 						/>
 					))}

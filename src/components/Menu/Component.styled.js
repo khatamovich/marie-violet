@@ -6,7 +6,7 @@ export const $Menu = styled.nav`
 	flex-direction: column;
 	text-align: center;
 	align-items: center;
-	gap: 0.5em;
+	gap: 0.75em;
 
 	font-size: 3.75rem;
 	line-height: 1;
@@ -16,8 +16,8 @@ export const $Menu = styled.nav`
 
 	transform: translateY(-3vh);
 
-	@media (width >= 1280px) {
-		font-size: 4.5rem;
+	@media (width >= 1000px) {
+		font-size: 4.75rem;
 	}
 
 	@media (height <= 475px) {
@@ -40,5 +40,9 @@ export const MenuItem = styled(Link)`
 	// Scale up on hover
 	&:hover {
 		transform: translateZ(0) scale(1.1);
+	}
+
+	@media (width >= 1000px) {
+		letter-spacing: 0.2em;
 	}
 `;

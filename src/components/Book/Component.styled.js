@@ -50,7 +50,7 @@ export const ActionsContainer = styled.div`
 
 	button {
 		font-size: 1.5rem;
-		font-family: Lancelot, Inter, Arial, serif;
+		font-family: "EB Garamond", Inter, Arial, serif;
 		border: none;
 		background: transparent;
 
@@ -69,13 +69,18 @@ export const ActionsContainer = styled.div`
 
 export const Title = styled.span`
 	font-size: 2.75rem;
-	letter-spacing: 0.1rem;
-	font-family: Lancelot, Inter, Arial, serif;
+	letter-spacing: 0.1em;
+	font-family: "EB Garamond", Inter, Arial, serif;
 	display: block;
 	line-height: 1;
-	margin-bottom: 0.5em;
+	margin-bottom: 0.25em;
+
+	@media (width >= 768px) {
+		font-size: 3.75rem;
+	}
 `;
 
 export const Description = styled.p`
 	white-space: pre-line;
+	font-size: 1.125rem;
 `;

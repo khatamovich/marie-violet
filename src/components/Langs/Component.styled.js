@@ -24,8 +24,15 @@ export const Lang = styled.div`
 	border-radius: 100%;
 	border: 0.1em solid transparent;
 	background: ${({ $bg }) => $bg || "rgba(191, 50, 255, 0.75)"};
-	-webkit-box-shadow: rgba(255, 94, 255, 0.2) 36.74px 41.99px 320.17px 115.47px;
-	box-shadow: rgba(255, 94, 255, 0.2) 36.74px 41.99px 320.17px 115.47px;
+	-webkit-box-shadow: rgba(255, 94, 255, 0.2) 36.74px 41.99px 320.17px 110px;
+	box-shadow: rgba(255, 94, 255, 0.2) 36.74px 41.99px 320.17px 110px;
+
+	@media (width >= 1000px) {
+		-webkit-box-shadow: rgba(255, 94, 255, 0.533) 36.74px 41.99px 320.17px
+			115.47px;
+		box-shadow: rgba(255, 94, 255, 0.533) 36.74px 41.99px 320.17px 115.47px;
+		background-color: rgba(191, 50, 255, 0.75);
+	}
 
 	cursor: pointer;
 

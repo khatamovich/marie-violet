@@ -9,16 +9,17 @@ export const $Background = styled.div`
 
 	@keyframes slideBackground {
 		0% {
-			background-position: 90% 50%;
+			background-position: 75% 50%;
 		}
 
 		100% {
-			background-position: 75% 50%;
+			background-position: 15% 50%;
+			opacity: 1;
 		}
 	}
 
 	animation: ${({ $animateBg }) =>
-		$animateBg && "slideBackground 2s ease-in-out forwards;"};
+		$animateBg && "slideBackground 2s ease-in-out forwards reverse"};
 	main {
 		flex: 1;
 		height: inherit;
