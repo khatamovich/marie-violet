@@ -7,7 +7,7 @@ export const PoetryPage = Page;
 
 export const HeaderContainer = styled($Container)`
 	height: auto;
-	padding: 2em 0 1em;
+	padding: 2em 0 3em;
 
 	display: flex;
 	justify-content: flex-end;
