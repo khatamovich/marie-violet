@@ -45,11 +45,11 @@ export const TextContainer = styled.div`
 export const ActionsContainer = styled.div`
 	margin-top: 2.75em;
 	display: flex;
-	gap: 2.75em;
+	gap: 2em;
 	transform: translateY(-0.5rem);
 
 	button {
-		font-size: 1.5rem;
+		font-size: 1.25rem;
 		font-family: "EB Garamond", Inter, Arial, serif;
 		border: none;
 		background: transparent;
