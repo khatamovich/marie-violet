@@ -7,8 +7,6 @@ import {
 	Title,
 	Description,
 } from "./Component.styled";
-import { AiOutlineDownload } from "react-icons/ai";
-import { MdOutlinePreview } from "react-icons/md";
 
 export default function Book({ coverImage, title, description }) {
 	return (

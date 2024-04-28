@@ -3,11 +3,11 @@ import styled from "styled-components";
 export const $Book = styled.div`
 	display: flex;
 	flex-direction: column;
-	gap: 3em;
+	gap: 0.75em;
 
 	@media (width >= 768px) or (height <= 475px) {
 		flex-direction: row;
-		align-items: flex-start;
+		gap: 2em;
 	}
 `;
 
@@ -18,12 +18,15 @@ export const Body = styled.div`
 
 export const ImageContainer = styled.div`
 	margin-bottom: 0.75em;
+	align-self: flex-start;
+
 	img {
-		object-fit: containe;
+		display: block;
+		object-fit: contain;
 		max-width: 100%;
 	}
 
-	@media (width >= 768px) {
+	@media (width >= 768px) or (height <= 475px) {
 		width: 100%;
 		max-width: 17.1875rem;
 		flex-shrink: 0;
@@ -40,9 +43,10 @@ export const TextContainer = styled.div`
 `;
 
 export const ActionsContainer = styled.div`
-	margin-top: 2em;
+	margin-top: 2.75em;
 	display: flex;
 	gap: 2.75em;
+	transform: translateY(-0.5rem);
 
 	button {
 		font-size: 1.5rem;
