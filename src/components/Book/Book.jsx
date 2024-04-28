@@ -1,5 +1,6 @@
 import {
 	$Book,
+	Body,
 	ImageContainer,
 	TextContainer,
 	ActionsContainer,
@@ -14,16 +15,18 @@ export default function Book({ coverImage, title, description }) {
 				<img src={coverImage} alt={title} />
 			</ImageContainer>
 
-			<TextContainer>
-				<Title>{title}</Title>
+			<Body>
+				<TextContainer>
+					<Title>{title}</Title>
 
-				<Description>{description}</Description>
-			</TextContainer>
+					<Description>{description}</Description>
+				</TextContainer>
 
-			<ActionsContainer>
-				<button>Preview</button>
-				<button>Download</button>
-			</ActionsContainer>
+				<ActionsContainer>
+					<button>Preview</button>
+					<button>Download</button>
+				</ActionsContainer>
+			</Body>
 		</$Book>
 	);
 }
