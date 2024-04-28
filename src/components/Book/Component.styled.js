@@ -68,7 +68,7 @@ export const ActionsContainer = styled.div`
 `;
 
 export const Title = styled.span`
-	font-size: 2.75rem;
+	font-size: 2.25rem;
 	letter-spacing: 0.1em;
 	font-family: "EB Garamond", Inter, Arial, serif;
 	display: block;
