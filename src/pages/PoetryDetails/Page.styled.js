@@ -28,8 +28,8 @@ export const MainContainer = styled($Container)`
 `;
 
 export const PoetryPageTitle = styled(Title)`
-	font-size: 2rem;
-	line-height: 1.125;
+	font-size: 2.75rem;
+	line-height: 1.05;
 	text-transform: unset;
 	white-space: pre-line;
 	max-width: 45ch;

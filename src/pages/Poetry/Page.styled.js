@@ -137,13 +137,18 @@ export const PoemsItem = styled.span`
 	&:hover,
 	&:active {
 		color: violet;
+
+		svg {
+			color: violet;
+			fill: violet;
+		}
 	}
 
 	svg {
 		color: white;
 		fill: white;
-		height: 24px;
-		width: 24px;
+		max-height: 24px;
+		max-width: 24px;
 	}
 `;
 
