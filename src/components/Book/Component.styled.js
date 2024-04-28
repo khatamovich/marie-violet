@@ -3,17 +3,41 @@ import styled from "styled-components";
 export const $Book = styled.div`
 	display: flex;
 	flex-direction: column;
+	gap: 3em;
+
+	@media (width >= 768px) {
+		flex-direction: row;
+		align-items: flex-start;
+	}
+`;
+
+export const Body = styled.div`
+	display: flex;
+	flex-direction: column;
 `;
 
 export const ImageContainer = styled.div`
 	margin-bottom: 0.75em;
 	img {
-		display: block;
+		object-fit: containe;
 		max-width: 100%;
+	}
+
+	@media (width >= 768px) {
+		width: 100%;
+		max-width: 17.1875rem;
+		flex-shrink: 0;
+
+		img {
+			width: 100%;
+			height: 100%;
+		}
 	}
 `;
 
-export const TextContainer = styled.div``;
+export const TextContainer = styled.div`
+	flex: 1;
+`;
 
 export const ActionsContainer = styled.div`
 	margin-top: 2em;
@@ -44,6 +68,8 @@ export const Title = styled.span`
 	letter-spacing: 0.1rem;
 	font-family: Lancelot, Inter, Arial, serif;
 	display: block;
+	line-height: 1;
+	margin-bottom: 0.5em;
 `;
 
 export const Description = styled.p`
