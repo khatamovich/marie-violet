@@ -15,4 +15,8 @@ export const ContactsItem = styled.a`
 	gap: 0.5em;
 
 	cursor: pointer;
+
+	svg {
+		transform: translateY(1.25px);
+	}
 `;
