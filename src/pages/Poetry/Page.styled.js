@@ -48,7 +48,6 @@ export const MainContainer = styled($Container)`
 
 	display: flex;
 	flex-direction: column;
-	text-align: center;
 	align-items: center;
 
 	.pagination-container {
@@ -107,6 +106,7 @@ export const Title = styled.h1`
 	line-height: 0.9;
 	text-transform: capitalize;
 	width: 100%;
+	text-align: center;
 
 	border-bottom: 1px solid #eee;
 	padding-bottom: 0.5em;
@@ -115,25 +115,35 @@ export const Title = styled.h1`
 
 export const PoemsList = styled.div`
 	font-size: 1.125rem;
-	line-height: 1.25;
+	line-height: 1.5;
 	display: flex;
 	flex-direction: column;
 	gap: 1em;
 	flex: 1;
+	list-style: square;
 `;
 
 export const PoemsItem = styled.span`
 	cursor: pointer;
-	border-bottom: 1px solid #eee;
-	padding-bottom: 0.5em;
-
 	transition-property: transform color;
 	transition-duration: 300ms;
 	transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
 
+	display: flex;
+	align-items: flex-start;
+	color: inherit;
+	gap: 1em;
+
 	&:hover,
 	&:active {
 		color: violet;
+	}
+
+	svg {
+		color: white;
+		fill: white;
+		height: 24px;
+		width: 24px;
 	}
 `;
 

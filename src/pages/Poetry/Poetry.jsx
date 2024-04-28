@@ -8,6 +8,7 @@ import {
 	HomeContactsContainer,
 } from "./Page.styled";
 import { MdOutlineChevronRight, MdOutlineChevronLeft } from "react-icons/md";
+import { PoemIcon } from "../../components/Icons";
 
 // Simple components
 import GoBack from "../../components/GoBack/GoBack";
@@ -21,6 +22,7 @@ import poems from "../../static/poems";
 
 // Background image
 import bgPrimary from "../../assets/images/fire-verses.jpg";
+import Poems from "../../static/poems";
 
 export default function Poetry({ title }) {
 	const { currentItems, pageCount, handlePageClick } = usePagination(
@@ -54,6 +56,7 @@ export default function Poetry({ title }) {
 								onClick={() => onNavigate(poem.id)}
 								key={`poem-${i}`}
 							>
+								<PoemIcon />
 								{poem.name.en}
 							</PoemsItem>
 						))}
