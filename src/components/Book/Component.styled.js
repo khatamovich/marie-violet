@@ -5,7 +5,7 @@ export const $Book = styled.div`
 	flex-direction: column;
 	gap: 3em;
 
-	@media (width >= 768px) {
+	@media (width >= 768px) or (height <= 475px) {
 		flex-direction: row;
 		align-items: flex-start;
 	}
