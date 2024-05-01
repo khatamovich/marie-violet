@@ -4,8 +4,8 @@ export default function Menu() {
 	return (
 		<$Menu>
 			<MenuItem to="/poetry">Poetry</MenuItem>
-			<MenuItem to="books">Books</MenuItem>
-			<MenuItem to="Media">Gallery</MenuItem>
+			<MenuItem to="/books">Books</MenuItem>
+			<MenuItem to="/gallery">Gallery</MenuItem>
 		</$Menu>
 	);
 }
