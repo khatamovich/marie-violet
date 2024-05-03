@@ -16,7 +16,7 @@ import Book from "../../components/Book/Book";
 import books from "../../static/books";
 
 // Background image
-import bgPrimary from "../../assets/images/fire-verses.jpg";
+import bgPrimary from "../../assets/images/fire-fox.jpg";
 
 export default function Books({ title }) {
 	if (!books || books.length < 1) return null;

@@ -1,10 +1,26 @@
 import { $Langs, Lang } from "./Component.styled";
 
-export default function Langs({ bg }) {
+const langs = [
+	{
+		code: "en",
+	},
+	{
+		code: "ru",
+	},
+];
+
+export default function Langs({ bg, onSwitchLang }) {
 	return (
 		<$Langs>
-			<Lang $bg={bg}>en</Lang>
-			<Lang $bg={bg}>ru</Lang>
+			{langs?.map((lang) => (
+				<Lang
+					onClick={() => onSwitchLang(lang.code)}
+					key={lang.code}
+					$bg={bg}
+				>
+					{lang.code}
+				</Lang>
+			))}
 		</$Langs>
 	);
 }

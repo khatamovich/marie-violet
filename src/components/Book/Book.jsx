@@ -7,8 +7,11 @@ import {
 	Title,
 	Description,
 } from "./Component.styled";
+import { useTranslation } from "react-i18next";
 
 export default function Book({ coverImage, title, description }) {
+	const { t } = useTranslation("common");
+
 	return (
 		<$Book>
 			<ImageContainer>
@@ -23,8 +26,7 @@ export default function Book({ coverImage, title, description }) {
 				</TextContainer>
 
 				<ActionsContainer>
-					<button>Preview</button>
-					<button>Download</button>
+					<button>{t("preview")}</button>
 				</ActionsContainer>
 			</Body>
 		</$Book>

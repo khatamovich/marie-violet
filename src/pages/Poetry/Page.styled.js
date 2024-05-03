@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 import { $Container } from "../../components/Container/Component.styled";
 import { $Background } from "../../components/Background/Component.styled";
 import { ContactsContainer } from "../Home/Page.styled";
