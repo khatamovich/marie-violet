@@ -74,6 +74,7 @@ export const Title = styled.span`
 	display: block;
 	line-height: 1;
 	margin-bottom: 0.25em;
+	text-transform: capitalize;
 
 	@media (width >= 768px) {
 		font-size: 3.25rem;

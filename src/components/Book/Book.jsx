@@ -26,9 +26,11 @@ export default function Book({ coverImage, title, description, previewURL }) {
 				</TextContainer>
 
 				<ActionsContainer>
-					<a href={previewURL} rel="noreferrer" target="__blank">
-						{t("preview")}
-					</a>
+					{previewURL && (
+						<a href={previewURL} rel="noreferrer" target="__blank">
+							{t("preview")}
+						</a>
+					)}
 				</ActionsContainer>
 			</Body>
 		</$Book>
