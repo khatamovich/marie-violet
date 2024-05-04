@@ -25,9 +25,12 @@ import bgPrimary from "../../assets/images/fire-verses.jpg";
 import { useTranslation } from "react-i18next";
 
 export default function Poetry() {
+	const {
+		i18n: { language },
+	} = useTranslation();
 	const { currentItems, pageCount, handlePageClick } = usePagination(
-		poems.en,
-		10,
+		poems[language],
+		25,
 	);
 	const navigate = useNavigate();
 	const { t } = useTranslation("common");
@@ -58,7 +61,7 @@ export default function Poetry() {
 								key={`poem-${i}`}
 							>
 								<PoemIcon />
-								{poem.name.en}
+								{poem.name}
 							</PoemsItem>
 						))}
 					</PoemsList>

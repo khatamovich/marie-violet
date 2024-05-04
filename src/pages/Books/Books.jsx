@@ -17,9 +17,13 @@ import books from "../../static/books";
 
 // Background image
 import bgPrimary from "../../assets/images/fire-fox.jpg";
+import { useTranslation } from "react-i18next";
 
 export default function Books({ title }) {
 	if (!books || books.length < 1) return null;
+	const {
+		i18n: { language },
+	} = useTranslation();
 
 	return (
 		<PoetryPage $bg={bgPrimary}>
@@ -31,11 +35,11 @@ export default function Books({ title }) {
 				<PoetryPageTitle>{title || "books"}</PoetryPageTitle>
 
 				<BooksContainer>
-					{books.en?.map((book) => (
+					{books[language]?.map((book) => (
 						<Book
 							key={book.id}
-							title={book.name.en}
-							description={book.annotation.en}
+							title={book.name}
+							description={book.annotation}
 							coverImage={book.coverImage}
 						/>
 					))}

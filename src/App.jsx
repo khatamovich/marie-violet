@@ -21,7 +21,7 @@ export default function App() {
     setIsLoading(true);
 
     setTimeout(() => setIsLoading(false), 1000);
-  }, [language, pathname]);
+  }, [language]);
 
   if (isLoading) return <Loader text={1} />;
 
