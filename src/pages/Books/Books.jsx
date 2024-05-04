@@ -41,6 +41,7 @@ export default function Books({ title }) {
 							title={book.name}
 							description={book.annotation}
 							coverImage={book.coverImage}
+							previewURL={book.previewURL}
 						/>
 					))}
 				</BooksContainer>

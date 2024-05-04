@@ -1,5 +1,7 @@
 // Images
-import purpleFlameCover from "../assets/images/books/purple-flame-cover.jpg";
+import purpleFlameCover from "../assets/images/books/portae.jpg";
+import aftertaste from "../assets/images/books/aftertaste.jpg";
+import Boginka from "../assets/images/books/boginka.png";
 
 const en = [
 	{
@@ -13,6 +15,8 @@ const en = [
 
 			She doesn’t recognise the melody yet, but one day she will certainly – definitely – sing this lullaby to the little heir of the big kingdom of strife.`,
 		coverImage: purpleFlameCover,
+		previewURL:
+			"https://www.google.co.uz/books/edition/Пурпурное_Пламя/B3qsEAAAQBAJ?hl=ru&gbpv=1&printsec=frontcover",
 	},
 	{
 		id: 2,
@@ -26,7 +30,7 @@ const en = [
 			Where do the mistakes of silence lead?
 
 			And what choice does Julia have to make to understand what it means to be truly happy?`,
-		coverImage: "https://cv1.litres.ru/pub/c/cover_415/67615514.webp",
+		coverImage: aftertaste,
 	},
 	{
 		id: 3,
@@ -50,7 +54,7 @@ const en = [
 			
 			Will fortune favour Malada this time, will it mend the scars of the past, or will the wounds remain unhealed?
 			`,
-		coverImage: "https://cv4.litres.ru/pub/c/cover_415/66566646.webp",
+		coverImage: Boginka,
 	},
 ];
 
@@ -65,6 +69,8 @@ const ru = [
 
 Она пока еще не узнает напев, но однажды точно – непременно – она сама споет эту колыбельную маленькому наследнику большого королевства раздора.`,
 		coverImage: purpleFlameCover,
+		previewURL:
+			"https://www.google.co.uz/books/edition/Пурпурное_Пламя/B3qsEAAAQBAJ?hl=ru&gbpv=1&printsec=frontcover",
 	},
 	{
 		id: 2,
@@ -79,7 +85,9 @@ const ru = [
 Куда приводят ошибки молчания?
 
 И какой выбор предстоит сделать Джулии, чтобы понять, что значит быть счастливой по-настоящему?`,
-		coverImage: "https://cv1.litres.ru/pub/c/cover_415/67615514.webp",
+		coverImage: aftertaste,
+		previewURL:
+			"https://www.google.co.uz/books/edition/Вишневое_Послевкусие/Zu1sEAAAQBAJ?hl=ru&gbpv=1",
 	},
 	{
 		id: 3,
@@ -105,7 +113,9 @@ const ru = [
 
 Обойдет ли беда стороной тебя хоть на этот раз, али раны прошлого так и останутся незатянутыми?
 			`,
-		coverImage: "https://cv4.litres.ru/pub/c/cover_415/66566646.webp",
+		coverImage: Boginka,
+		previewURL:
+			"https://www.google.co.uz/books/edition/Богинка/NFFHEAAAQBAJ?hl=ru&gbpv=1",
 	},
 ];
 

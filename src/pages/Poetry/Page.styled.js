@@ -129,6 +129,7 @@ export const PoemsItem = styled.span`
 	transition-duration: 300ms;
 	transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
 	font-family: "EB Garamond", serif;
+	line-height: 1.25;
 
 	display: flex;
 	align-items: flex-start;

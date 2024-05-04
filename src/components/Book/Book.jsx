@@ -9,7 +9,7 @@ import {
 } from "./Component.styled";
 import { useTranslation } from "react-i18next";
 
-export default function Book({ coverImage, title, description }) {
+export default function Book({ coverImage, title, description, previewURL }) {
 	const { t } = useTranslation("common");
 
 	return (
@@ -26,7 +26,9 @@ export default function Book({ coverImage, title, description }) {
 				</TextContainer>
 
 				<ActionsContainer>
-					<button>{t("preview")}</button>
+					<a href={previewURL} rel="noreferrer" target="__blank">
+						{t("preview")}
+					</a>
 				</ActionsContainer>
 			</Body>
 		</$Book>

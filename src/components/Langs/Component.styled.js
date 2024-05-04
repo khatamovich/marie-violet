@@ -13,7 +13,7 @@ export const Lang = styled.div`
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
 	line-height: 1;
-
+	font-family: "EB Garamond", Inter, Arial, serif;
 	width: 3em;
 	height: 3em;
 

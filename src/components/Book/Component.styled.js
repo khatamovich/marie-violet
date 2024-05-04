@@ -43,12 +43,12 @@ export const TextContainer = styled.div`
 `;
 
 export const ActionsContainer = styled.div`
-	margin-top: 2.75em;
+	margin-top: 2em;
 	display: flex;
 	gap: 2em;
 	transform: translateY(-0.5rem);
 
-	button {
+	a {
 		font-size: 1.25rem;
 		font-family: "EB Garamond", Inter, Arial, serif;
 		border: none;
@@ -69,14 +69,14 @@ export const ActionsContainer = styled.div`
 
 export const Title = styled.span`
 	font-size: 2.25rem;
-	letter-spacing: 0.1em;
+	letter-spacing: 0.075em;
 	font-family: "EB Garamond", Inter, Arial, serif;
 	display: block;
 	line-height: 1;
 	margin-bottom: 0.25em;
 
 	@media (width >= 768px) {
-		font-size: 3.75rem;
+		font-size: 3.25rem;
 	}
 `;
 
