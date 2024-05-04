@@ -20,8 +20,8 @@ export default function App() {
   useEffect(() => {
     setIsLoading(true);
 
-    setTimeout(() => setIsLoading(false), 1000);
-  }, [language]);
+    setTimeout(() => setIsLoading(false), 500);
+  }, [language, pathname]);
 
   if (isLoading) return <Loader text={1} />;
 

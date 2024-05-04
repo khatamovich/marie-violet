@@ -4,10 +4,8 @@ export const useSwitchLang = () => {
 	const { i18n } = useTranslation();
 
 	const onSwitchLang = (selectedLang) => {
-		setTimeout(() => {
-			const newLang = selectedLang;
-			i18n.changeLanguage(newLang);
-		}, 500);
+		const newLang = selectedLang;
+		i18n.changeLanguage(newLang);
 	};
 
 	return { onSwitchLang };
