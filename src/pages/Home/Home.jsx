@@ -12,16 +12,24 @@ import Contacts from "../../components/Contacts/Contacts";
 
 // Background image
 import bgPrimary from "../../assets/images/main-page-bg-primary.jpg";
+import { useTranslation } from "react-i18next";
+import { useSwitchLang } from "../../hooks/useSwitchLang";
 
 export default function Home() {
+	const { onSwitchLang } = useSwitchLang();
+
+	const {
+		i18n: { language },
+	} = useTranslation();
+
 	return (
 		<Background bg={bgPrimary} animateBg={true}>
 			<LangsContainer>
-				<Langs />
+				<Langs onSwitchLang={onSwitchLang} />
 			</LangsContainer>
 
 			<MainContainer>
-				<Menu />
+				<Menu language={language} />
 			</MainContainer>
 
 			<ContactsContainer>

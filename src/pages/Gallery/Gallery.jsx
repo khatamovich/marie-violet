@@ -26,7 +26,7 @@ export default function Gallery() {
 				<ImageGallery
 					imagesInfoArray={galleryData}
 					columnCount={4}
-					columnWidth={175}
+					columnWidth={150}
 					gapSize={14}
 				/>
 			</MainContainer>

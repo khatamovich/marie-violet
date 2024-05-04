@@ -12,9 +12,13 @@ import jsonData from "../../static/poems";
 
 // Background image
 import bgPrimary from "../../assets/images/fire-verses.jpg";
+import { useTranslation } from "react-i18next";
 
 export default function PoetryDetails() {
-	const { data } = useGetDataById(jsonData.en, 8);
+	const {
+		i18n: { language },
+	} = useTranslation();
+	const { data } = useGetDataById(jsonData[language], 8);
 
 	if (!data) return null;
 
@@ -25,9 +29,9 @@ export default function PoetryDetails() {
 			</HeaderContainer>
 
 			<MainContainer>
-				<PoetryPageTitle>{data.name.en}</PoetryPageTitle>
+				<PoetryPageTitle>{data.name}</PoetryPageTitle>
 
-				<blockquote>{data.content?.en}</blockquote>
+				<blockquote>{data.content}</blockquote>
 			</MainContainer>
 
 			<HomeContactsContainer>

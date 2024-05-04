@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 import { $Container } from "../../components/Container/Component.styled";
 import { $Background } from "../../components/Background/Component.styled";
 import { ContactsContainer } from "../Home/Page.styled";
@@ -114,11 +113,12 @@ export const Title = styled.h1`
 `;
 
 export const PoemsList = styled.div`
-	font-size: 1.125rem;
+	font-size: 1.4rem;
 	line-height: 1.5;
 	display: flex;
 	flex-direction: column;
-	gap: 1em;
+
+	gap: 0.5em;
 	flex: 1;
 	list-style: square;
 `;
@@ -128,6 +128,8 @@ export const PoemsItem = styled.span`
 	transition-property: transform color;
 	transition-duration: 300ms;
 	transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+	font-family: "EB Garamond", serif;
+	line-height: 1.25;
 
 	display: flex;
 	align-items: flex-start;
@@ -149,6 +151,7 @@ export const PoemsItem = styled.span`
 		fill: white;
 		max-height: 24px;
 		max-width: 24px;
+		transform: translateY(6px);
 	}
 `;
 

@@ -22,14 +22,18 @@ import poems from "../../static/poems";
 
 // Background image
 import bgPrimary from "../../assets/images/fire-verses.jpg";
-import Poems from "../../static/poems";
+import { useTranslation } from "react-i18next";
 
-export default function Poetry({ title }) {
+export default function Poetry() {
+	const {
+		i18n: { language },
+	} = useTranslation();
 	const { currentItems, pageCount, handlePageClick } = usePagination(
-		poems.en,
-		10,
+		poems[language],
+		25,
 	);
 	const navigate = useNavigate();
+	const { t } = useTranslation("common");
 
 	const onNavigate = (path) => {
 		setTimeout(() => {
@@ -47,7 +51,7 @@ export default function Poetry({ title }) {
 			</HeaderContainer>
 
 			<MainContainer>
-				<Title>{title || "Poetry"}</Title>
+				<Title>{t("poetry-page.title")}</Title>
 
 				{currentItems && currentItems.length >= 1 ? (
 					<PoemsList>
@@ -57,7 +61,7 @@ export default function Poetry({ title }) {
 								key={`poem-${i}`}
 							>
 								<PoemIcon />
-								{poem.name.en}
+								{poem.name}
 							</PoemsItem>
 						))}
 					</PoemsList>
