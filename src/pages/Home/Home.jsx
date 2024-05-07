@@ -31,7 +31,7 @@ export default function Home() {
 				<meta name="description" content={t("home-page.SEO.description")} />
 				<meta name="keywords" content={t("home-page.SEO.keywords")} />
 				<meta name="author" content={t("author")} />
-				<link rel="canonical" href={t("home-page.canonicalURL")} />
+				<link rel="canonical" href={t("home-page.SEO.canonicalURL")} />
 			</Helmet>
 
 			<LangsContainer>

@@ -56,7 +56,7 @@ export default function Poetry() {
 				/>
 				<meta name="keywords" content={t("poetry-page.SEO.keywords")} />
 				<meta name="author" content={t("author")} />
-				<link rel="canonical" href={t("poetry-page.canonicalURL")} />
+				<link rel="canonical" href={t("poetry-page.SEO.canonicalURL")} />
 			</Helmet>
 
 			<HeaderContainer>
