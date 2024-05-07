@@ -23,6 +23,11 @@ export default function App() {
     setTimeout(() => setIsLoading(false), 500);
   }, [language, pathname]);
 
+  // Update document lang attr on language change
+  useEffect(() => {
+    document.documentElement.lang = language;
+  }, [language]);
+
   if (isLoading) return <Loader text={1} />;
 
   return (
