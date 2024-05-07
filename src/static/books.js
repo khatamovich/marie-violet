@@ -2,7 +2,7 @@
 import purpleFlameCover from "../assets/images/books/portae.jpg";
 import purpleFlameCoverEn from "../assets/images/books/portae-en.jpg";
 import aftertaste from "../assets/images/books/aftertaste.jpg";
-import aftertasteEn from "../assets/images/books/aftertaste-en.jpg";
+import aftertasteEn from "../assets/images/books/aftertaste-en.png";
 import Boginka from "../assets/images/books/boginka.png";
 
 const en = [
