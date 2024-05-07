@@ -6,6 +6,7 @@ import {
 	HomeContactsContainer,
 	BooksContainer,
 } from "./Page.styled";
+import { Helmet } from "react-helmet";
 
 // Simple components
 import GoBack from "../../components/GoBack/GoBack";
@@ -22,11 +23,24 @@ import { useTranslation } from "react-i18next";
 export default function Books({ title }) {
 	if (!books || books.length < 1) return null;
 	const {
+		t,
 		i18n: { language },
-	} = useTranslation();
+	} = useTranslation("common");
 
 	return (
 		<PoetryPage $bg={bgPrimary}>
+			{/*SEO*/}
+			<Helmet>
+				<title>{t("books-page.SEO.title")}</title>
+				<meta
+					name="description"
+					content={t("books-page.SEO.description")}
+				/>
+				<meta name="keywords" content={t("books-page.SEO.keywords")} />
+				<meta name="author" content={t("author")} />
+				<link rel="canonical" href={t("books-page.SEO.canonicalURL")} />
+			</Helmet>
+
 			<HeaderContainer>
 				<GoBack />
 			</HeaderContainer>

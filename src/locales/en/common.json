@@ -1,6 +1,37 @@
 {
+	"author": "Marie E. Violet",
+	"home-page": {
+		"SEO": {
+			"title": "Explore the World of Marie E. Violet: Books, Poetry, and Photography",
+			"description": "Dive into the enchanting world of Marie E. Violet, where history merges with fantasy, and drama unfolds in epic proportions. Explore captivating books, poetry, and stunning photography on Marie's website.",
+			"keywords": "Purple Flame, Goddess, Boginka, The Play, poetry, Marie E. Violet, art author, books, poems, photography, fantasy, drama",
+			"canonicalURL": "https://www.marieviolet.art/"
+		}
+	},
+	"books-page": {
+		"SEO": {
+			"title": "Books by Marie Violet: Explore the Collection",
+			"description": "Discover a curated collection of books written by Marie Violet. Dive into captivating stories, vibrant characters, and unforgettable journeys.",
+			"keywords": "Marie Violet books, Marie Violet novels, Purple Flame, The Play, Goddess, boginka",
+			"canonicalURL": "https://marieviolet.art/books"
+		}
+	},
 	"poetry-page": {
-		"title": "Poetry"
+		"title": "Poetry",
+		"SEO": {
+			"title": "Poetry by Marie Violet: Explore the Verses",
+			"description": "Immerse yourself in the enchanting world of poetry by Marie Violet. Discover heartfelt verses, evocative imagery, and profound emotions.",
+			"keywords": "Marie Violet poetry, Marie Violet poems, Marie Violet verse",
+			"canonicalURL": "https://marieviolet.art/poetry"
+		}
+	},
+	"gallery-page": {
+		"SEO": {
+			"title": "Gallery of Marie Violet: Visual Journey",
+			"description": "Embark on a visual journey through the captivating gallery of Marie Violet. Experience stunning photography capturing moments, emotions, and stories.",
+			"keywords": "Marie Violet gallery, Marie Violet photography, Marie Violet images",
+			"canonicalURL": "https://marieviolet.art/gallery"
+		}
 	},
 	"preview": "Preview",
 	"download": "Download"

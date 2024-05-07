@@ -9,6 +9,7 @@ import {
 } from "./Page.styled";
 import { MdOutlineChevronRight, MdOutlineChevronLeft } from "react-icons/md";
 import { PoemIcon } from "../../components/Icons";
+import { Helmet } from "react-helmet";
 
 // Simple components
 import GoBack from "../../components/GoBack/GoBack";
@@ -26,14 +27,14 @@ import { useTranslation } from "react-i18next";
 
 export default function Poetry() {
 	const {
+		t,
 		i18n: { language },
-	} = useTranslation();
+	} = useTranslation("common");
 	const { currentItems, pageCount, handlePageClick } = usePagination(
 		poems[language],
 		25,
 	);
 	const navigate = useNavigate();
-	const { t } = useTranslation("common");
 
 	const onNavigate = (path) => {
 		setTimeout(() => {
@@ -46,6 +47,18 @@ export default function Poetry() {
 
 	return (
 		<Page $bg={bgPrimary}>
+			{/*SEO*/}
+			<Helmet>
+				<title>{t("poetry-page.SEO.title")}</title>
+				<meta
+					name="description"
+					content={t("poetry-page.SEO.description")}
+				/>
+				<meta name="keywords" content={t("poetry-page.SEO.keywords")} />
+				<meta name="author" content={t("author")} />
+				<link rel="canonical" href={t("poetry-page.canonicalURL")} />
+			</Helmet>
+
 			<HeaderContainer>
 				<GoBack />
 			</HeaderContainer>
