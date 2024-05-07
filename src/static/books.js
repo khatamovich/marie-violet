@@ -1,6 +1,8 @@
 // Images
 import purpleFlameCover from "../assets/images/books/portae.jpg";
+import purpleFlameCoverEn from "../assets/images/books/portae-en.jpg";
 import aftertaste from "../assets/images/books/aftertaste.jpg";
+import aftertasteEn from "../assets/images/books/aftertaste-en.jpg";
 import Boginka from "../assets/images/books/boginka.png";
 
 const en = [
@@ -14,9 +16,9 @@ const en = [
 			But little Arabela is not yet familiar with either cruelty or betrayal. She believes in love and mother’s fairy tales; she sees prophetic dreams. The road lies before her; other people’s destinies fall into her hands; she is led by the ghosts of the past.
 
 			She doesn’t recognise the melody yet, but one day she will certainly – definitely – sing this lullaby to the little heir of the big kingdom of strife.`,
-		coverImage: purpleFlameCover,
+		coverImage: purpleFlameCoverEn,
 		previewURL:
-			"https://www.google.co.uz/books/edition/Пурпурное_Пламя/B3qsEAAAQBAJ?hl=ru&gbpv=1&printsec=frontcover",
+			"https://docs.google.com/document/d/1zjuRDAd-iyUhnKjZnAUe0l55EKmvrcZf9bomERksqb8/edit?hl=ru",
 	},
 	{
 		id: 2,
@@ -30,7 +32,9 @@ const en = [
 			Where do the mistakes of silence lead?
 
 			And what choice does Julia have to make to understand what it means to be truly happy?`,
-		coverImage: aftertaste,
+		coverImage: aftertasteEn,
+		previewURL:
+			"https://docs.google.com/document/d/1ovoKPyhgrBFXr9Hd9MJHt-6ZBV-9As9KbtveZ7Gys0I/edit?usp=sharing",
 	},
 	{
 		id: 3,
