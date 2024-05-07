@@ -4,6 +4,7 @@ import purpleFlameCoverEn from "../assets/images/books/portae-en.jpg";
 import aftertaste from "../assets/images/books/aftertaste.jpg";
 import aftertasteEn from "../assets/images/books/aftertaste-en.png";
 import Boginka from "../assets/images/books/boginka.png";
+import thePlay from "../assets/images/books/the-play.jpg";
 
 const en = [
 	{
@@ -46,8 +47,7 @@ const en = [
 			She closes her eyes, inhales deeply her favourite scent of cinnamon and sweet oranges, and exhales. In front of her there is a frightening nothingness, shrouded in the darkness of a small, cold chamber.
 
 			Did she abandon this God or never belong to him?`,
-		coverImage:
-			"https://www.marytribble.com/wp-content/uploads/2020/12/book-cover-placeholder.png",
+		coverImage: thePlay,
 	},
 	{
 		id: 4,
@@ -102,8 +102,7 @@ const ru = [
 Она закрывает глаза, глубоко втягивает любимый аромат корицы и сладких апельсинов и выдыхает. Перед ней – пугающее ничего, окутанное мраком маленькой холодной кельи.
  
 Она отказалась от этого бога или никогда ему не принадлежала?`,
-		coverImage:
-			"https://www.marytribble.com/wp-content/uploads/2020/12/book-cover-placeholder.png",
+		coverImage: thePlay,
 	},
 	{
 		id: 4,
