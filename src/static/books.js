@@ -5,6 +5,7 @@ import aftertaste from "../assets/images/books/aftertaste.jpg";
 import aftertasteEn from "../assets/images/books/aftertaste-en.png";
 import Boginka from "../assets/images/books/boginka.png";
 import thePlay from "../assets/images/books/the-play.jpg";
+import thePlayEn from "../assets/images/books/the-play-en.jpg";
 
 const en = [
 	{
@@ -47,7 +48,7 @@ const en = [
 			She closes her eyes, inhales deeply her favourite scent of cinnamon and sweet oranges, and exhales. In front of her there is a frightening nothingness, shrouded in the darkness of a small, cold chamber.
 
 			Did she abandon this God or never belong to him?`,
-		coverImage: thePlay,
+		coverImage: thePlayEn,
 	},
 	{
 		id: 4,
